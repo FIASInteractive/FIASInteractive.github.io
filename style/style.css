@@ -1,0 +1,16 @@
+.titlearea {
+    padding: 0%;
+    margin: 0%;
+}
+
+.titlearea div {
+    display: block;
+}
+
+body {
+    background-image: url(../media/bgtemp.png);
+    text-align: center;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
