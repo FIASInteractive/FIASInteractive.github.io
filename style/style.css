@@ -8,14 +8,103 @@
     margin: 0%;
 }
 
-.titlearea div {
-    display: block;
+.FIASlogo:hover{
+    animation: shake 0.5s infinite ease-in-out;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a{
+    text-decoration: none !important;
+    color: rgb(94, 94, 94);
+    font-size: 42px;
+    transition: 0.2s;
+}
+
+.navbar a:hover{
+    color: black;
+}
+
+.navbar li{
+    color: black;
+    float: left;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    Transform: scale(1);
+    transition: 0.2s;
+}
+
+.navbar li:hover{
+    color: black;
+    Transform: scale(1.1);
+}
+
+.navbar #active{
+    color: black;
+    Transform: scale(1.1);
 }
 
 body {
     background-image: url(../media/bgtemp.png);
     text-align: center;
+    font-family: bakso;
     overflow-x: hidden;
     margin: 0px;
     padding: 0px;
 }
+
+.border{
+    color: black;
+    background-color: black;
+    padding: 2px;
+}
+
+.gamescontainer{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+.GameButton{
+    width: 200px;
+    height: 200px;
+    padding: 25px;
+}
+
+.GameButton .gamelogo{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: 0.3s;
+    Transform: scale(1);
+}
+
+.gamelogo:hover{
+    Transform: scale(1.05);
+}
+
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
