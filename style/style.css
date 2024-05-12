@@ -8,7 +8,7 @@
     margin: 0%;
 }
 
-.FIASlogo:hover{
+.logo:hover{
     animation: shake 0.5s infinite ease-in-out;
 }
 
@@ -26,7 +26,7 @@
 .navbar a{
     text-decoration: none !important;
     color: rgb(94, 94, 94);
-    font-size: 42px;
+    font-size: 50px;
     transition: 0.2s;
 }
 
@@ -91,6 +91,19 @@ body {
 
 .gamelogo:hover{
     Transform: scale(1.05);
+}
+
+
+@media only screen and (max-device-width: 480px)
+{
+    .navbar li{
+        color: red;
+        float: unset;
+    }
+
+    .navbar a{
+        font-size: 80px;
+    }
 }
 
 
