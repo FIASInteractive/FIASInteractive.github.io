@@ -1,3 +1,8 @@
+@font-face {
+    font-family: bakso;
+    src: url("/fonts/BaksoSapi.otf");
+}
+
 .titlearea {
     padding: 0%;
     margin: 0%;
