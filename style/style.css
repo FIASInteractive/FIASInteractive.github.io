@@ -12,6 +12,11 @@
     animation: shake 0.5s infinite ease-in-out;
 }
 
+#greetings{
+    font-size: 40px;
+    margin: .3em;
+}
+
 .navbar{
     display: flex;
     justify-content: center; 
@@ -103,6 +108,11 @@ body {
 
     .navbar a{
         font-size: 80px;
+    }
+
+    #greetings{
+        font-size: 60px;
+        margin: .3em;
     }
 }
 
