@@ -2,26 +2,25 @@
 <head>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <script type = "text/javascript" src="/scripts/DateTime.js"></script>
 
     <div class="titlearea">
         <div class="title_scrolling_background">
         </div>
-        <div class="logo">
-            <img src="./media/FIAS logo.svg" width=300>
-        </div>
+        <a href="/index.html"><img src="/media/FIAS logo.jpg" width=300 class="logo"></a>
         <h1 id="greetings">Hello there</h1>
     </div>
 
 </head>
 
-<body>
+<body onload="ChangeGreeting()">
     <div class="border"></div>
     <nav class="navbar">
         <ul id="navlist">
-            <li> <a href="index.html" id="active">Home</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="contact.html">Socials</a></li>
+            <li><a href="/index.html" id="active">Home</a></li>
+            <li><a href="/pages/games.html">Games</a></li>
+            <li><a href="/pages/contact.html">Socials</a></li>
         </ul>
     </nav>
     <div class="border"></div>
@@ -51,23 +50,3 @@
     </footer>
 
 </body>
-
-
-
-<script>
-    const hour = new Date().getHours(); 
-    let greeting;
-    if (hour < 12){
-       greeting = "Good Morning";
-    }
-    else if (hour >= 12 && hour < 18 ){
-       greeting = "Good Afternoon";
-    }
-    else if (hour >= 18 && hour < 22 ){
-       greeting = "Good Evening";
-    }
-    else if(hour >= 22){
-        greeting = "Good Night";
-    }
-    document.getElementById("greetings").textContent = greeting;
-</script>
