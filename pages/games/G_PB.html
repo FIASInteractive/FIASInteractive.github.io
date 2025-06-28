@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/style/style.css">
+    <script type = "text/javascript" src="/scripts/DateTime.js"></script>
+
+    <div class="titlearea">
+        <div class="title_scrolling_background">
+        </div>
+        <a href="/index.html"><img src="/media/FIAS logo.jpg" width=300 class="logo"></a>
+        <h1 id="greetings">Hello there</h1>
+    </div>
+
+</head>
+
+<body onload="ChangeGreeting()">
+    <div class="border"></div>
+    <nav class="navbar">
+        <ul id="navlist">
+            <li> <a href="/index.html">Home</a></li>
+            <li><a href="/pages/games.html" id="active">Return to Games</a></li>
+            <li><a href="/pages/contact.html">Socials</a></li>
+        </ul>
+    </nav>
+    <div class="border"></div>
+   
+    <main>
+        <br>
+        <br>
+            <div class="DescriptionArea">
+            <a href="https://fias-interactive.itch.io/12-gauges-a-prayer">
+                <span style="color: red;">12 Gauges a Prayer</span>
+            </a>
+            
+            was created as a submission for the
+                
+            <a href="https://itch.io/jam/2485-game-jam" target="_blank">
+                    <span style="color: red;">WARLords 2023 Game Jam.</span>
+                </a>
+            <br>
+            <br>
+            <div style="font-weight:bolder;">
+            The Story
+            </div>
+
+            <div>
+                <br>
+                12 Gauges A prayer's original story was centered around a priest called Gage.
+                <br>
+                <br>
+                While attempting an exorcism, Gage is killed by the demon and sent down to hell.
+                <br>
+                <br>
+                This was his plan all along.
+                <br>
+                <br>
+                Getting older, and growing with hatred towards god's choice to allow demonic possessions to continue, Gage takes matters into hit own hands.
+                <br>
+                <br>
+                His target? Satan himself.
+                <br>
+                <br>
+            </div>
+
+            
+
+            </div>
+
+            <div class="border"></div>
+
+            <h1>MEDIA</h1>
+            <div class="MediaArea">
+                <div class="GameImage"><a href="https://fiasinteractive.com/media/games/12GAP/1.png"><img src="/media/games/12GAP/1.png"></a></div>
+                <div class="GameImage"><a href="https://fiasinteractive.com/media/games/12GAP/2.png"><img src="/media/games/12GAP/2.png"></a></div>
+                <div class="GameImage"><a href="https://fiasinteractive.com/media/games/12GAP/3.png"><img src="/media/games/12GAP/3.png"></a></div>
+                <div class="GameVideo"><iframe src="https://drive.google.com/file/d/1D3IMh22hqJLIMLiwKPPErDOGP_Co59Nc/preview" allow="autoplay"></iframe></div>
+
+            </div>
+    </main>
+
+
+    <footer>
+        <div class="border"></div>
+        <h2>FIAS Interactive © 2023-2024</h2>
+    </footer>
+
+</body>
+
+
+
+<script>
+    const hour = new Date().getHours(); 
+    let greeting;
+    if (hour < 12){
+       greeting = "Good Morning";
+    }
+    else if (hour >= 12 && hour < 18 ){
+       greeting = "Good Afternoon";
+    }
+    else if (hour >= 18 && hour < 22 ){
+       greeting = "Good Evening";
+    }
+    else if(hour >= 22){
+        greeting = "Good Night";
+    }
+    document.getElementById("greetings").textContent = greeting;
+</script>
